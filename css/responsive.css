@@ -1,0 +1,546 @@
+/* ===============================================
+									Mobile Menu
+===============================================  */
+
+#navbar-header {
+	padding: relative;	
+}
+
+#mobile-nav-open-btn {
+	font-size: 30px;
+	color: #f4c613;
+	cursor: pointer;
+	z-index: 2;
+	position: absolute;
+	right: 0;
+	top: 6px;
+	display: none;
+}
+
+#mobile-nav {
+  
+  /* By Default Mobile Nav will be hidden */
+  height: 0%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: all 300ms linear;
+	-webkit-transition: all 300ms linear;
+	-moz-transition: all 300ms linear;
+	-ms-transition: all 300ms linear;
+	-o-transition: all 300ms linear;
+	overflow-y: hidden;
+}
+
+#mobile-nav-close-btn {
+	font-family: "Raleway", sans-serif;
+	font-size: 70px;
+	color: #212226;
+	font-weight: 400;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 13px;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+#mobile-nav-content {
+	text-align: center;
+	margin-top: 40px;
+	position: relative;
+	top: 10%;
+}
+
+#mobile-nav ul li {
+	margin-bottom: 15px;
+}
+
+#mobile-nav a {
+	font-family: "Raleway", sans-serif;
+	font-size: 18px;
+	color: #212226;
+	text-transform: uppercase;
+	display: inline;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+	color: #f4c613;
+	background: none;
+}
+
+/* mobile menu active */
+
+.white-nav-top #mobile-nav ul.nav>li.active>a {
+	color: #f4c613;
+	font-weight: 500;
+}
+
+
+
+/* ===============================================
+						Bootstrap 3 Media Querries
+===============================================  */
+
+/* Large Devices (Laptops e Desktops) */
+@media (min-width: 1200px) and (max-width: 1299px) {
+
+  /* Navagation */
+  .site-nav-wrapper {
+    padding: 0 20px;
+  }
+
+}
+
+/* Medium Devices (landscape tablets and medium desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  
+  /* Navagation */
+  .site-nav-wrapper {
+    padding: 0;
+  }
+
+  .vertical-heading h2 {
+    font-size: 29px;
+  }
+
+  /* services 02 */
+  .service-tab .tab-bg {
+    padding: 16px 30px;
+    min-height: 400px;
+  }
+
+  .service-tab p {
+    line-height: 20px;
+  }
+
+}
+
+/* Small Devices (Portrait tablets and small desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Navagation */
+  .site-nav-wrapper {
+    padding: 0;
+  }
+
+  /* home */
+  #home-headings {
+    font-size: 41px;
+  }
+
+  #home-text p {
+    font: 13px;
+  }
+
+  /*Generic */
+  .btn-general {
+    padding: 8px 35px 8px 35px;
+    font-size: 10px;
+  }
+
+  /*Generic*/
+  .vertical-heading h2 {
+    font-size: 29px;
+  }
+
+  /*tech statement*/
+  #tech-statement h3{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /*services p2*/
+  .r-tabs-accordion-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .r-tabs-accordion-title a {
+    font-family: "Raleway", sans-serif;
+	  font-size: 13px;
+	  color: #212226;
+  	text-transform: uppercase;
+	  font-weight: 400;
+	  padding: 0;
+	  text-decoration: none;
+  }
+
+  /* Active Tab */
+  .r-tabs-accordion-title.r-tabs-state-active a{
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding-bottom: 5px;
+    transition: border-color 300ms linear;
+    -webkit-transition: border-color 300ms linear;
+    -moz-transition: border-color 300ms linear;
+    -ms-transition: border-color 300ms linear;
+    -o-transition: border-color 300ms linear;
+  }
+
+  /* pricing */
+  .pricing-table .price h2 {
+    margin: 0 0 0 6px;
+    font-size: 35px;
+  }
+
+  /* blog */
+  .blog-post .post-meta p {
+    line-height: 14px;
+  }
+
+  /* contact */
+  ul.office-details li i {
+    width: 25 px;
+  }
+
+    ul.office-details li {
+    margin-right: 15px;
+  }
+
+  /* Stats */
+
+  #stats .vertical-heading {
+    margin-left: 15px;
+  }
+
+  #stats .vertical-heading h2 {
+    margin-left: 15px;
+  }
+
+}
+
+/* Extra Small Devices (Landscape Phones and Portrait Tablets) */
+@media (max-width: 767px) {
+
+  .navbar {
+    padding: 20px 0;
+  }
+
+  .site-nav-wrapper, .white-nav-top {
+    padding: 0;
+  }
+
+  /* Navigation */
+  #mobile-nav-open-btn {
+    display: block;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 0px 15px;
+  }
+
+  /* home */
+  #home-headings h1 {
+    font-size: 24px;
+  }
+
+  #home-text p {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 8px 2px 30px 2px;
+  }
+  
+  /* Generic */
+  .btn-general {
+    padding: 8px 25px 6px 25px;
+    font-size: 10px;
+  }
+
+  /* Large Content box */
+  .content-box-lg {
+    padding: 90px 0;
+  }
+
+  /* Vertical headings*/
+  .vertical-heading {
+    text-align: center;
+  }
+
+  .vertical-heading h5 {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    display: block;
+    position: static;
+    margin-bottom: 15px;
+  }
+
+  .vertical-heading h2 {
+    margin: 0;
+    font-size: 29px;
+    line-height: normal;
+  }
+
+  /* about */
+  #about-left {
+    margin-bottom: 50px;
+  }
+
+  #about-right {
+    text-align: center;
+  }
+
+
+  .content-box-md {
+    padding: 80px 0;
+  }
+
+  .about-item {
+    padding: 55px 30px;
+    margin-bottom: 35px;
+  }
+
+  .about-item i {
+    font-size: 30px;
+  }
+
+  .about-item h3 {
+    font-size: 18px;
+  }
+
+  /* Team */
+  #team-left .vertical-heading {
+    min-height: 120px;
+  }
+
+  .skill h4 {
+    font-size: 14px;
+    line-height: 35px;
+  }
+
+  /*tech statement*/
+  #tech-statement h3{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /*horizontal headings*/
+  .horizontal-headings {
+    margin-bottom: 40px
+  }
+
+  .horizontal-headings h2 {
+    font-size: 30px;
+  }
+
+  /*services*/
+  #services-01 img {
+    margin: 35px 0;
+  }
+
+  .service, .service .icon {
+    text-align: center;
+  }
+
+  .service h4 {
+    font-size: 18px;
+  }
+
+  /*services p2*/
+  .r-tabs-accordion-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .r-tabs-accordion-title a {
+    font-family: "Raleway", sans-serif;
+	  font-size: 13px;
+	  color: #212226;
+  	text-transform: uppercase;
+	  font-weight: 400;
+	  padding: 0;
+	  text-decoration: none;
+  }
+
+  /* Active Tab */
+  .r-tabs-accordion-title.r-tabs-state-active a{
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding-bottom: 5px;
+    transition: border-color 300ms linear;
+    -webkit-transition: border-color 300ms linear;
+    -moz-transition: border-color 300ms linear;
+    -ms-transition: border-color 300ms linear;
+    -o-transition: border-color 300ms linear;
+  }
+
+  .service-tab .tab-bg {
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .service-tab h2 {
+    font-size: 40px;
+  }
+
+  .service-tab h2 {
+    font-size: 30px;
+  }
+
+  /* Portfolio */
+
+  #portfolio {
+    padding-bottom: 0;
+  }
+
+  #isotope-filters button { 
+    padding-right: 10px;
+  }
+
+  #testemonials {
+    padding-top: 45px;
+  }
+
+  .testemonial h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #testemonial-slider {
+    top: 0;
+  }
+
+  #testemonials .vertical-heading {
+    padding: 0;
+  }
+
+  .testemonial .stars {
+    font-size: 12px;
+    margin: 10px 0 40px 0;
+    transform: translateY(75%)  ;
+    -webkit-transform: translateY(75%)  ;
+    -moz-transform: translateY(75%)  ;
+    -ms-transform: translateY(75%)  ;
+    -o-transform: translateY(75%)  ;
+}
+
+  .testemonial p {
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  /* pricing */
+  .pricing-table {
+    margin-bottom: 15px;
+  }
+
+  .pricing-table h2 {
+    font-size: 28px;
+    margin: 0 0 0 16px;
+  }
+
+  /* Stats */
+  .stats-item {
+    margin-bottom: 20px;
+    padding: 25px 5px;
+  }
+
+  .stats-item i {
+    font-size: 30px;
+  }
+
+  .stats-item h3 {
+    font-size: 24px;
+  }
+
+  /* blog */
+  #blog-left {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .blog-post {
+    margin-bottom: 15px;
+  }
+
+  /*contact */
+  #contact-left {
+    text-align: center;
+  }
+
+  .office {
+    margin-bottom: 40px;
+  }
+
+  ul.office-details li {
+    display: block;
+    margin-top: 25px;
+  }
+
+  ul.office-details li i {
+    width: auto;
+    display: block;
+  }
+
+  ul.social-list {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  /* home */
+  #home-headings h1 {
+    font-size: 18px;
+  }
+
+  #home-text p {
+    font-size: 11px;
+    line-height: 16px;
+    margin: 8px 10px 25px 10px;
+  }
+
+  /* Generic */
+  .vertical-heading h2 {
+    font-size: 22px;
+  }
+
+  /* Portfolio */
+  #isotope-filters {
+    text-align: center;
+  }
+
+  #isotope-filters button { 
+    font-size: 10px;
+    padding-right: 10px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  
+  .testemonial h3 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .testemonial .stars {
+    font-size: 10px;
+  }
+
+}
